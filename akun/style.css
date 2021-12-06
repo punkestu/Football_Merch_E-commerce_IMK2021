@@ -1,0 +1,129 @@
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#body{
+	margin-top: 15vh;
+	height: 70vh;
+	width: 70vw;
+	background-color: darkblue;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 20px;
+}
+
+@keyframes stretchin{
+	from{width: 67%}
+	to{width: 27%;}
+}
+
+@keyframes stretchout{
+	from{width: 27%}
+	to{width: 67%;}
+}
+
+@keyframes up{
+	from{margin-top: 300px;}
+	to{margin-top: 0;}
+}
+
+#off{
+	border-radius: 20px;
+	width: 27%;
+	height: 94%;
+
+	animation: stretchin;
+	animation-duration: 0.6s;
+	/*background-color: blue;*/
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.masuk{
+	background-color: blue !important;
+	color: white !important;
+}
+
+.daftar{
+	background-color: white !important;
+	color: blue !important;
+}
+
+.button{
+	margin-top: 10px;
+}
+.button:hover{
+	margin-top: 4px;
+}
+
+#on{
+	border-radius: 20px;
+	margin: 100px 0;
+	width: 67%;
+	height: 94%;
+	animation: stretchout;
+	animation-duration: 0.6s;
+	/*background-color: white;	*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	overflow: hidden;
+}
+#on .content{
+	animation: up;
+	animation-duration: 0.6s;
+}
+.form{
+	display: flex;
+	margin-top: 10px;
+}
+.form .left{
+	margin-left: 10px;
+	/*height: 12vh;*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	justify-content: space-evenly;
+}
+
+.form input{
+	background-color: #0000;
+	margin-bottom: 2px;
+	padding: 2px 10px;
+	border-radius: 10px;
+}
+
+.masuk input{
+	border: 2px solid #fff8;
+}
+.masuk input::placeholder{
+	color: white;
+}
+.daftar input{
+	border: 2px solid #00f5;
+}
+
+.register{
+	background-color: white;
+}
+.register *{
+	color: darkblue;
+}
+
+.login{
+	background-color: blue;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Football Merch | Home</title>
+	<link rel="stylesheet" href="../globalStyle.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<div id="fog" class="hide" onclick="toggleSBar()"></div>
+	<div id="sidebar" class="sbhide">
+		<div id="akun">
+			<div class="avatar">
+				A
+			</div>
+			<h4>Avatar</h4>
+			<h6>avatar@fmail.com</h6>
+		</div>
+		<div class="keranjang">
+			<h4>Keranjang</h4>
+			<div class="container">
+				
+			</div>
+		</div>
+		<details class="accordion">
+			<summary>Checkout</summary>
+			<form action="#">
+				<input type="text" placeholder="Provinsi">
+				<input type="text" placeholder="Kota">
+				<textarea placeholder="Alamat lengkap" rows="10"></textarea>
+				<input type="tel" placeholder="Phone">
+			</form>
+			<hr>
+			<div class="action">
+				<div>Harga: <div id="harga"></div></div>
+				<button class="button">Checkout Now</button>
+			</div>
+		</details>
+		<div style="display: flex;justify-content: center;margin-top: 20px;">
+			<a class="logout" href="../landingPage/index.html">
+				<img src="../assets/power.png">
+			</a>
+		</div>
+	</div>
+
+	<header>
+		<div class="logo">Football Merch</div>
+		<div class="navbar">
+			<div class="button sideBtn" onclick="toggleSBar()">
+				<img src="../assets/cart.png">
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="jumbotron">
+			<div id="carousel">
+				<div id="footages">
+					<img class="slide" src="../assets/footage2.jpg">
+					<img class="slide" src="../assets/footage2.jpg">
+					<img class="slide" src="../assets/footage2.jpg">
+				</div>
+			</div>
+			<div class="pointer">
+				<div class="point" onclick="moveto(0)"></div>
+				<div class="point" onclick="moveto(1)"></div>
+				<div class="point" onclick="moveto(2)"></div>
+			</div>
+		</div>
+		<hr style="width:80%;">
+		<div class="shop">
+			<h2 style="text-align:center;margin: 20px;">SHOP</h2>
+			<div class="content">
+				<div class="left">
+					<h3 style="text-align:center;margin: 20px;">MERCHANDISE</h3>
+					<div class="items">
+						<div class="item"></div><div class="item"></div><div class="item"></div>
+						<div class="item"></div><div class="item"></div><div class="item"></div>
+						<div class="item"></div><div class="item"></div><div class="item"></div>
+						<div class="item"></div><div class="item"></div><div class="item"></div>
+						<div class="item"></div><div class="item"></div><div class="item"></div>
+					</div>
+				</div>
+				<div class="right">
+					
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="../globalScript.js"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

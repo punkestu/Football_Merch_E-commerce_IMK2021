@@ -1,0 +1,250 @@
+.sideBtn{
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	color: darkblue;
+	padding: 15px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sideBtn img{
+	width: 20px;
+	height: 20px;
+}
+
+.sideBtn:hover{
+	padding: 18px;
+}
+.sideBtn:hover img{
+	width: 25px;
+	height: 25px;
+}
+
+main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#fog{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+
+	z-index: 75;
+
+	background-color: #0005;
+}
+#sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 30vw;
+
+	z-index: 100;
+
+	background-color: ghostwhite;
+	box-shadow: -10px 0 #0003;
+
+	transition: 0.5s;
+
+	overflow-y: scroll;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.sbhide{
+	right: -35vw !important;
+
+	transition: 0.5s;
+}
+
+#akun{
+	/*width: 100%;*/
+	min-height: 10vh;
+	padding: 5px 10px;
+	margin-bottom: 5px;
+	background-color: blue;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar{
+	padding: 10px;
+	width: 3vh;
+	height: 3vh;
+	background-color: white;
+	color: darkblue;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.keranjang, .accordion{
+	margin: 5px 5px;
+	padding: 5px 10px;
+	background-color: blue;
+	border-radius: 10px;
+
+	cursor: pointer;
+}
+
+.keranjang{
+	height: 50vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.keranjang .container{
+	background-color: white;
+	margin: 5px;
+	width: 98%;
+	height: 90%;
+	border-radius: 10px;
+}
+
+.accordion summary{
+	font-weight: 900;
+}
+
+::placeholder{
+	color: whitesmoke;
+}
+
+input, textarea{
+	width: 98%;
+	font-size: 1.1em;
+	margin: 3px 2px;
+	border: 2px solid white;
+	background-color: #0000;
+	color: white;
+}
+.accordion hr{
+	margin-top: 5px;
+}
+.accordion .action{
+	margin: 10px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.action button{
+	background-color: #0000;
+	border: 2px solid white;
+}
+
+.logout{
+	background-color: red;
+	border-radius: 50%;
+	width: 10vw;
+	height: 10vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 500ms;
+
+	cursor: pointer;
+}
+.logout:hover{
+	box-shadow: 0 3px 8px 0 red;
+	transition: 500ms;
+}
+
+.logout img{
+	filter: invert(100%);
+	widows: 6vw;
+	height: 6vw;
+}
+
+.jumbotron{
+	min-height: 100vh;
+	/*background-color: darkblue;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#carousel{
+	height: 90vh;
+}
+
+#footages{
+	left: 0;
+	position: absolute;
+	margin-top: 13vh;
+	display: flex;
+	flex-direction: row-reverse;
+	transition: 1s;
+}
+
+#footages img{
+	width: 100vw;
+}
+
+.pointer{
+	width: 60px;
+	display: flex;
+	justify-content: space-between;
+
+	z-index: 10;
+}
+
+.point{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: white;
+	cursor: pointer;
+}
+
+.pointed{
+	background-color: #999;
+}
+
+.shop{
+	height: 50vh;
+	width: 100%;
+	background-color: blue;
+}
+
+.shop .content{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.shop .content .left{
+	width: 68%;
+	/*background-color: darkblue;*/
+	padding-bottom: 10px;
+}
+
+.shop .content .right{
+	width: 28%;
+	background-color: darkblue;
+}
+
+.items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.item{
+	width: 150px;
+	height: 150px;
+	margin: 10px 0;
+	background-color: white;
+}

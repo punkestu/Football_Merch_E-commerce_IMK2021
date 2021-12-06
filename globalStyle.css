@@ -1,0 +1,117 @@
+*{
+	font-family: sans-serif;
+	margin: 0;
+	z-index: 1;
+	color: white;
+}
+
+header{
+	/*display: none;*/
+
+	position: fixed;
+	top: 0px;
+	width: 94.4vw;
+	height: 10vh;
+	padding: 5px 30px;
+	background-color: #022f82;
+	color: white;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	z-index: 50;
+
+	transition: top 300ms;
+}
+
+header .logo{
+	font-size: 1.5em;
+	font-weight: 910;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .navbar{
+	margin-right: 3vw;
+}
+
+body{
+	background-color: blue;
+	overflow-x: hidden;
+}
+
+main{
+	/*margin-top: 10vh;*/
+}
+
+footer{
+	height: 50vh;
+
+	background-color: darkblue;
+}
+
+a{
+	text-decoration: none;
+}
+
+.button{
+	padding: 8px 15px;
+	font-weight: 900;
+	border-radius: 25px;
+	cursor: pointer;
+	border: none;
+	text-align: center;
+
+	transition: 150ms;
+}
+
+.button:hover{
+	padding: 10px 18px;
+	font-size: 1.1em;
+	border-radius: 30px;
+	transition: 150ms;
+}
+
+.card{
+	margin: 20px;
+	width: 300px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 30px 20px;
+	background-color: blue;
+	border-radius: 20px;
+	min-height: 280px;
+
+	transition: 200ms;
+}
+
+.card:hover{
+	padding: 20px 28px;
+	background-color: blue;
+	border-radius: 22px;
+
+	transition: 200ms;
+}
+
+.card .chead{
+	/*color: blue;*/
+	/*opacity: 0.5;*/
+	margin-top: 20px;
+}
+
+.card .ccontent{
+	text-align: center;
+	/*color: blue;*/
+	opacity: 0.9;
+}
+
+.hide{
+	display: none;
+}
