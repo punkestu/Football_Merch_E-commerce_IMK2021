@@ -209,6 +209,7 @@ input, textarea{
 }
 .content h1{
 	font-size: 5em;
+	width: 600px;
 }
 .content p{
 	font-size: 1.5em;
