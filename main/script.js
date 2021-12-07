@@ -64,3 +64,20 @@ function sub(i) {
 	items[i].innerHTML=angka;
 	document.getElementById("harga").innerHTML = "Rp."+total;
 }
+
+var day = 15;
+var second = 0;
+var timer = document.getElementById("timer");
+timer.innerHTML = "0:0:0"
+function tick(){
+	if(second == 0){
+		day-=1;
+		second = 3600*24-1;
+	}else{
+		second-=1;
+	}
+	timer.innerHTML = ""+day+":"+parseInt(second/3600)+":"+parseInt((second%3600)/60)+":"+parseInt((second%3600)%60);
+	setTimeout(tick, 1000);
+}
+
+tick();

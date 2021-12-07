@@ -242,6 +242,10 @@ input, textarea{
 	height: 50vh;
 	width: 100%;
 	background-color: blue;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .shop .content{
@@ -253,6 +257,10 @@ input, textarea{
 	width: 68%;
 	/*background-color: darkblue;*/
 	padding-bottom: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .shop .content .right{
@@ -327,3 +335,49 @@ input, textarea{
 	font-size: 1.7em;
 }
 
+.event{
+	margin: 20px;
+}
+
+.event .banner{
+	width: 90vw;
+	height: 70vh;
+	position: relative;
+}
+
+.event .banner img{
+	width: 90vw;
+	height: 70vh;
+	object-fit: cover;
+	/*display: non;*/
+}
+
+.banner .item{
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translate(0,-50%);
+	width: 300px;
+	height: 300px;
+}
+.banner .item .cover{
+	width: 300px;
+	height: 300px;
+	top: -300px;
+}
+.banner .item:hover .cover{
+	top: 0;
+}
+.banner .item img{
+	width: 300px;
+	height: 300px;
+}
+.banner h1{
+	color: whitesmoke;
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	transform: translate(0,-50%);
+	font-size: 5em;
+	text-shadow: 2px 2px 8px black;
+}
