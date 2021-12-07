@@ -51,6 +51,21 @@ footer{
 	height: 50vh;
 
 	background-color: darkblue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.sponsor{
+	margin-top: 40px;
+	display: flex;
+	align-items: flex-start;
+}
+
+.sponsor img{
+	margin: 10px;
+	height: 10vh;
+	transition: 200ms;
 }
 
 a{
