@@ -44,3 +44,23 @@ function autoslide(){
 }
 
 autoslide();
+
+var items = document.getElementsByClassName("amount");
+var total = 0;
+for (var i = 0; i < 15; i++) {
+	total+=parseInt(items[i].innerHTML);
+}
+
+function add(i) {
+	var angka = parseInt(items[i].innerHTML)+1;
+	items[i].innerHTML=angka;
+	total+=50000;
+	document.getElementById("harga").innerHTML = "Rp."+total;
+}
+function sub(i) {
+	var angka = parseInt(items[i].innerHTML)-1;
+	if(angka<0){angka=0;}
+	else{total-=50000;}
+	items[i].innerHTML=angka;
+	document.getElementById("harga").innerHTML = "Rp."+total;
+}
