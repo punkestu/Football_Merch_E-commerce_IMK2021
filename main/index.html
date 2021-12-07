@@ -25,16 +25,16 @@
 		<details class="accordion">
 			<summary>Checkout</summary>
 			<form action="#">
-				<input type="text" placeholder="Provinsi">
-				<input type="text" placeholder="Kota">
-				<textarea placeholder="Alamat lengkap" rows="10"></textarea>
-				<input type="tel" placeholder="Phone">
+				<input type="text" placeholder="Provinsi" required>
+				<input type="text" placeholder="Kota" required>
+				<textarea placeholder="Alamat lengkap" rows="10" required></textarea>
+				<input type="tel" placeholder="Phone" required>
+				<hr>
+				<div class="action">
+					<div>Harga: <div id="harga"></div></div>
+					<button class="button">Checkout Now</button>
+				</div>
 			</form>
-			<hr>
-			<div class="action">
-				<div>Harga: <div id="harga"></div></div>
-				<button class="button">Checkout Now</button>
-			</div>
 		</details>
 		<div style="display: flex;justify-content: center;margin-top: 20px;">
 			<a class="logout" href="../landingPage/index.html">
@@ -56,9 +56,46 @@
 		<div class="jumbotron">
 			<div id="carousel">
 				<div id="footages">
-					<img class="slide" src="../assets/footage2.jpg">
-					<img class="slide" src="../assets/footage2.jpg">
-					<img class="slide" src="../assets/footage2.jpg">
+					<div class="slide">
+						<div class="content">
+							<h1>
+								MU Kalah 5 - 0?
+							</h1>
+							<p style="width: 500px;">
+								Diduga karena ada bola masuk ke gawang Mancaster 
+								United sebanyak 5 kali, klub besar dari Inggris ini
+								mendapatkan 5 gol(untuk lawannya)
+							</p>
+						</div>
+						<img src="../assets/footage1.webp">
+					</div>
+					<div class="slide">
+						<div class="content">
+							<h1>
+								Ole dipecat?
+							</h1>
+							<p style="width: 280px;">
+								Glory Glory Man United
+								Glory Glory Man United
+								Glory Glory Man United
+								As the Spurs Go Marching On! On! On!
+							</p>
+						</div>
+						<img src="../assets/footage2.webp">
+					</div>
+					<div class="slide">
+						<div class="content">
+							<h1>
+								Ronaldo kembali ke MU
+							</h1>
+							<p style="width: 500px;">
+								Dengan kembalinya ronaldo ke klub setan merah ini,
+								dapat dipastikan bahwa klub besar ini akan
+								menjadi nomer 1 lagi. emang iya?
+							</p>
+						</div>
+						<img src="../assets/footage3.webp">
+					</div>
 				</div>
 			</div>
 			<div class="pointer">

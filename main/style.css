@@ -186,12 +186,36 @@ input, textarea{
 	position: absolute;
 	margin-top: 13vh;
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	transition: 1s;
 }
 
-#footages img{
+.slide{
+	position: relative;
+	color: white;
 	width: 100vw;
+	height: 85vh;
+}
+.slide .content{
+	background-color: #5556;
+	padding: 20px 30px;
+	border-radius: 20px;
+
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	/*transform: translate(-50%,-50%);*/
+}
+.content h1{
+	font-size: 5em;
+}
+.content p{
+	font-size: 1.5em;
+}
+.slide img{
+	width: 100vw;
+	height: 85vh;
+	object-fit: cover;
 }
 
 .pointer{
