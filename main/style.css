@@ -115,6 +115,14 @@ main{
 	border-radius: 10px;
 }
 
+#keranjang{
+	overflow-y: scroll;
+}
+#keranjang *{
+	color: darkblue;
+	margin: 10px 20px;
+}
+
 .accordion summary{
 	font-weight: 900;
 }
@@ -335,6 +343,10 @@ input, textarea{
 .n div{
 	cursor: pointer;
 	font-size: 1.7em;
+}
+
+.content .right img{
+	width: 100%;
 }
 
 .event{

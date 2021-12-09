@@ -47,7 +47,8 @@ autoslide();
 
 var items = document.getElementsByClassName("amount");
 var total = 0;
-for (var i = 0; i < 15; i++) {
+var keranjang = document.getElementById("keranjang");
+for (var i = 0; i < 16; i++) {
 	total+=parseInt(items[i].innerHTML);
 }
 
@@ -56,6 +57,15 @@ function add(i) {
 	items[i].innerHTML=angka;
 	total+=50000;
 	document.getElementById("harga").innerHTML = "Rp."+total;
+	keranjang.innerHTML = "";
+	for (var j = 0; j < 16; j++) {
+		amount = parseInt(items[j].innerHTML);
+		if(amount>0){
+			tag = document.createElement("h4");
+			tag.innerHTML = "Jersey x "+amount;
+			keranjang.appendChild(tag);
+		}
+	}
 }
 function sub(i) {
 	var angka = parseInt(items[i].innerHTML)-1;
@@ -63,7 +73,14 @@ function sub(i) {
 	else{total-=50000;}
 	items[i].innerHTML=angka;
 	document.getElementById("harga").innerHTML = "Rp."+total;
+	amount = parseInt(items[i].innerHTML);
+	if(amount>0){
+		tag = document.createElement("h1");
+		tag.innerHTML = "Jersey";
+		keranjang.appendChild(tag);
+	}
 }
+
 
 var day = 15;
 var second = 0;
